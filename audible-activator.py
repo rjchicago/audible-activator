@@ -74,7 +74,8 @@ def fetch_activation_bytes(username, password, options):
         else:
             chromedriver_path = "./chromedriver"
 
-
+        print("chrome_options: %s" % opts)
+        print("chromedriver_path: %s" % chromedriver_path)
         driver = webdriver.Chrome(chrome_options=opts,
                                   executable_path=chromedriver_path)
 
